@@ -1,0 +1,241 @@
+@charset "utf-8";
+@import '../node_modules/bulma';
+@import '~antd/dist/antd.css';
+
+// SET VARIABLES
+$red : #AC2C2E;
+$dark-red: #8f2425;
+$pink: #F5C4C3;
+$grey: #F2F4F8;
+$light-grey: #FCFCFE;
+
+*{
+  font-family: 'DM Sans', sans-serif;
+  background-color: $light-grey;
+}
+
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70vh;
+}
+
+/* ESTILOS GENERALES PARA DESKTOP */
+
+h1{
+  font-family: 'DM Sans', sans-serif;
+  font-size: 70px;
+  font-weight: 700;
+  color: $red;
+}
+
+h2{
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+}
+
+h3{
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+h4{
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+h5{
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+p{
+  font-family: 'DM Sans', sans-serif;
+  font-size: 25px;
+}
+
+small{
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+span{
+  color: $red;
+  font-weight: 700;
+}
+
+input, select{
+  width: 100%;
+  margin: 8px;
+  padding: 5px;
+  border-radius: 3px;
+  border: none;
+  border-bottom: 3px groove $dark-red;
+  font-size: 20px;
+  background-color: $grey;
+}
+
+button{
+  width: 100%;
+  height: 3rem;
+  margin: 8px;
+  padding: 5px;
+  border-radius: 3px;
+  color: white;
+  border: 1px solid $grey;
+  font-size: 22px;
+  text-transform: uppercase;
+  background-color: $dark-red;
+}
+
+form{
+  width: 70%;
+  background-color: transparent;
+  z-index: 2;
+}
+
+.center-column{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.logo{
+  font-family: 'DM Sans', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: $red;
+}
+
+.btn-large{
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  border-style: none;
+  border-radius: 10px;
+  padding: 15px 45px;
+  margin: 25px;
+  color: white;
+  background-color: $red;
+  transition: 0.3s;
+}
+
+.btn-large:hover{
+  background-color: $dark-red;
+}
+
+.divisor{
+  width: 100px;
+  height: 5px;
+  margin: 30px 0;
+  background-color: $red;
+}
+
+.divisor-white{
+  width: 100px;
+  height: 5px;
+  margin: 30px 0;
+  background-color: white;
+}
+
+.home-article{
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+}
+
+.red-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 50vh;
+  color: white;
+  background-color: $dark-red;
+}
+
+// NAVBAR
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+}
+
+nav{
+  padding: 20px;
+}
+
+nav > li{
+  display: inline;
+}
+
+nav form{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+nav form input{
+  font-family: 'DM Sans', sans-serif;
+  width: 200px;
+  font-size: 20px;
+  padding: 5px 15px;
+  color: $red;
+  margin: 10px 5px;
+  border-style: none;
+  border-radius: 5px;
+  background-color: white;
+}
+
+::placeholder{
+  color: $red;
+}
+
+nav form button{
+  font-family: 'DM Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 5px 15px;
+  color: white;
+  margin: 10px 5px;
+  border-style: none;
+  border-radius: 5px;
+  background-color: $red;
+  transition: 0.3s;
+}
+
+nav form button:hover{
+  background-color: $dark-red;
+}
+
+// FOOTER
+
+.link{
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.link:hover{
+  color: $red
+}
+
+//SPHERE
+.sphere{
+  background-color: $dark-red;
+  position: absolute;
+  z-index: 1;
+  left: 850px;
+  top: -400px;
+  border-radius: 50%;
+  width: 1500px;
+  height: 1500px;
+}
